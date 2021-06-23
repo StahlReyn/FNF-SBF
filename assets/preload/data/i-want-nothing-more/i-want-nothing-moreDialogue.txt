@@ -1,0 +1,3 @@
+:dad:gfPortrait:So, how are we going to wake him up?
+:bf:bfPortrait:Beep Boop
+:dad:gfPortrait:Sounds like a plan

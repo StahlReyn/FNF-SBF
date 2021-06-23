@@ -17,6 +17,9 @@ class Note extends FlxSprite
 {
 	public var strumTime:Float = 0;
 
+	//new charged damage note thing
+	public var charged:Bool = false;
+
 	public var mustPress:Bool = false;
 	public var noteData:Int = 0;
 	public var canBeHit:Bool = false;
@@ -37,31 +40,36 @@ class Note extends FlxSprite
 
 	public var rating:String = "shit";
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false)
-	{
-		super();
-
-		if (prevNote == null)
-			prevNote = this;
-
-		this.prevNote = prevNote;
-		isSustainNote = sustainNote;
-
-		x += 50;
-		// MAKE SURE ITS DEFINITELY OFF SCREEN?
-		y -= 2000;
-		this.strumTime = strumTime;
-
-		if (this.strumTime < 0 )
-			this.strumTime = 0;
-
-		this.noteData = noteData;
-
-		var daStage:String = PlayState.curStage;
-
-		switch (PlayState.SONG.noteStyle)
+	public function new(_strumTime:Float, _noteData:Int, ?_prevNote:Note, ?sustainNote:Bool = false)
 		{
-			case 'pixel':
+			super();
+	
+			if (_prevNote == null)
+				_prevNote = this;
+	
+			prevNote = _prevNote;
+			isSustainNote = sustainNote;
+	
+			x += 50;
+			// MAKE SURE ITS DEFINITELY OFF SCREEN?
+			y -= 2000;
+			strumTime = _strumTime;
+			strumTime = strumTime < 0 ? 0 : strumTime;
+
+			charged = _noteData > 7;
+	
+			//No sustain charge 1
+			if(isSustainNote && prevNote.charged) { 
+				charged = true;
+			}
+	
+			noteData = _noteData % 4;
+	
+			var daStage:String = PlayState.curStage;
+	
+			switch (PlayState.SONG.noteStyle)
+			{
+				case 'pixel':
 				loadGraphic(Paths.image('weeb/pixelUI/arrows-pixels','week6'), true, 17, 17);
 
 				animation.add('greenScroll', [6]);
@@ -104,10 +112,21 @@ class Note extends FlxSprite
 				animation.addByPrefix('redhold', 'red hold piece');
 				animation.addByPrefix('bluehold', 'blue hold piece');
 
+				if(charged){
+					frames = Paths.getSparrowAtlas('NOTE_charged', 'spaceboy');
+					animation.addByPrefix('blueScroll', 'blue charged');
+					animation.addByPrefix('greenScroll', 'green charged');
+					animation.addByPrefix('redScroll', 'red charged');
+					animation.addByPrefix('purpleScroll', 'purple charged');
+					x -= 10;
+				}
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
 				antialiasing = true;
 		}
+
+		if (charged)
+			setGraphicSize(Std.int(width * 0.86));
 
 		switch (noteData)
 		{
@@ -188,16 +207,37 @@ class Note extends FlxSprite
 	{
 		super.update(elapsed);
 
+		//no sustain charge 2
+		if(isSustainNote && prevNote.charged) { 
+			this.kill(); 
+		}
+
 		if (mustPress)
 		{
 			// The * 0.5 is so that it's easier to hit them too late, instead of too early
-			if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 1.5)
-				&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
-				canBeHit = true;
+			if (!charged)
+			{
+				if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
+					&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
+					canBeHit = true;
+				else
+					canBeHit = false;
+			}
 			else
-				canBeHit = false;
-
-			if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset * Conductor.timeScale && !wasGoodHit)
+			{
+				// smaller hitbox
+				if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 0.5)
+					&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.3)) // harder to hit late!
+					canBeHit = true;
+				else
+					canBeHit = false;
+			//if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 1.5)
+			//	&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
+			//	canBeHit = true;
+			//else
+			//	canBeHit = false;
+			}
+			if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset && !wasGoodHit)
 				tooLate = true;
 		}
 		else

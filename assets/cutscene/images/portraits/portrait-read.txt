@@ -1,0 +1,18 @@
+You can add as many portrait as you wanted. To add it just edit the second paramater in the dialogue, like for example:
+
+:dad:bfNeutral:I am saying stuff
+
+This would put the portrait named "bfNeutral" on the left side, the dad's side, and the dialogue will be "I am saying stuff"
+The image is facing to the right (to you) in normal image, the game will mirror it on it's own when used on the other side.
+
+When left blank it will default into bfPortrait
+
+Keep in mind the game will automatically resize the portrait to fit into the box, and that also means stretching the image,
+for best quality have the image already in be in square proportion. Other than that there are no real limits on resolution.
+Smaller would be good though to minimize lag.
+
+Have fun adding what ever questionable thing you want to put, there's a couple unused portrait to mess around.
+
+
+
+Also we do not talk about susheart

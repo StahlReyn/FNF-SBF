@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SB_campaign.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BF HEY!! instance 10000" x="0" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10001" x="0" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10002" x="329" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10003" x="329" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10004" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10005" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10006" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10007" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10008" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10009" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10010" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10011" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10012" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10013" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10014" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10015" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10016" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10017" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10018" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10019" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10020" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10021" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10022" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10023" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10024" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF HEY!! instance 10025" x="658" y="0" width="329" height="332"/>
+	<SubTexture name="BF idle dance white instance 10000" x="987" y="0" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10001" x="987" y="0" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10002" x="1316" y="0" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10003" x="1316" y="0" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10004" x="1645" y="0" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10005" x="1645" y="0" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10006" x="0" y="332" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10007" x="0" y="332" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10008" x="329" y="332" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10009" x="329" y="332" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10010" x="329" y="332" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10011" x="329" y="332" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10012" x="329" y="332" width="329" height="331"/>
+	<SubTexture name="BF idle dance white instance 10013" x="329" y="332" width="329" height="331"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10000" x="658" y="332" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10001" x="999" y="332" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10002" x="1340" y="332" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10003" x="1681" y="332" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10004" x="0" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10005" x="341" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10006" x="682" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10007" x="1023" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10008" x="1023" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10009" x="1023" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10010" x="1364" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10011" x="1364" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10012" x="1364" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10013" x="1705" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10014" x="1705" y="663" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10015" x="0" y="977" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10016" x="341" y="977" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10017" x="682" y="977" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10018" x="1023" y="977" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10019" x="1364" y="977" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10020" x="1705" y="977" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10021" x="0" y="1291" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10022" x="341" y="1291" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10023" x="341" y="1291" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10024" x="341" y="1291" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10025" x="682" y="1291" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10026" x="682" y="1291" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10027" x="682" y="1291" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10028" x="1023" y="1291" width="341" height="314"/>
+	<SubTexture name="GF Dancing Beat WHITE instance 10029" x="1023" y="1291" width="341" height="314"/>
+	<SubTexture name="SB idle BLACK LINES instance 10000" x="1364" y="1291" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10001" x="1364" y="1291" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10002" x="1679" y="1291" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10003" x="1679" y="1291" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10004" x="0" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10005" x="0" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10006" x="315" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10007" x="315" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10008" x="630" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10009" x="630" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10010" x="945" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10011" x="945" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10012" x="945" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10013" x="945" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10014" x="945" y="1686" width="315" height="395"/>
+	<SubTexture name="SB idle BLACK LINES instance 10015" x="945" y="1686" width="315" height="395"/>
+	<SubTexture name="WEEK1 select instance 10000" x="1260" y="1686" width="360" height="90"/>
+	<SubTexture name="WEEK1 select instance 10001" x="1620" y="1686" width="360" height="90"/>
+	<SubTexture name="arrow push right instance 10000" x="1980" y="1686" width="41" height="74"/>
+</TextureAtlas>
